@@ -28,10 +28,10 @@ services:
 ```
 
 ### Notes
-* This image was completely rewritten on May 3, 2021 to use LinuxServer.io's base image so that permissions properly work.
 * If you want your changes to persist, include a copy of the config folder and bind mount it to the app at /app/config. 
 
 ### Changelog:
+* **November 6, 2023** Package updates: StreamDVR Latest, Alpine 3.18, yt-dlp 2023.10.13, node 21.
 * **August 2nd, 2021** Package updates: StreamDVR v0.14, Alpine 3.14, youtube-dl 2021.06.06 & streamlink 2.3.0
 * **May 3rd, 2021:** Rebase image to LinuxServer.io's Alpine image for customizable permissions.
 * **November 24, 2020:** Upgrade packages: Alpine 3.12, youtube-dl 2020.11.24, streamlink 1.7.0. Added healthcheck via [healthchecks.io](https://healthchecks.io/).
