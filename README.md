@@ -11,20 +11,15 @@ ghcr.io/purrsevere/streamdvr:latest
 
 ### Docker Compose
 ```
-version: "3"
 services:
   streamdvr:
     container_name: streamdvr
     image: ghcr.io/purrsevere/streamdvr:latest
-    restart: on-failure
     volumes:
       - /path/to/config:/app/config
       - /path/to/capturing:/app/capturing
       - /path/to/captured:/app/captured
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/London
+      - /etc/localtime:/etc/localtime
 ```
 
 ### Notes
