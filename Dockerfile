@@ -4,7 +4,7 @@ ENV YT_DLP_VERSION=2025.06.30
 ENV STREAMLINK_VERSION=7.5.0
 
 RUN echo "**** install dependencies ****" && \
-    apk add --no-cache curl python3 py3-setuptools ca-certificates bash git build-base libgomp ffmpeg tzdata && \
+    apk add --no-cache curl python3 py3-pip py3-setuptools ca-certificates bash git build-base libgomp ffmpeg tzdata && \
     python3 -m pip install --upgrade pip setuptools && \
     echo "**** install yt-dlp ****" && \
     curl -L https://github.com/yt-dlp/yt-dlp/releases/download/${YT_DLP_VERSION}/yt-dlp_linux -o /usr/local/bin/yt-dlp && chmod a+rx /usr/local/bin/yt-dlp && \
