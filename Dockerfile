@@ -1,7 +1,5 @@
 FROM node:22-alpine3.21
 
-LABEL org.opencontainers.image.source https://github.com/purrsevere/docker-streamdvr
-
 ENV YT_DLP_VERSION=2025.06.30
 ENV STREAMLINK_VERSION=7.5.0
 
